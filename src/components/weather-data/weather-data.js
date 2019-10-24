@@ -1,9 +1,52 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-class WeatherData extends Component {
-  render() {
-    return <p>Weather Data</p>
-  }
-}
+const WeatherData = props => {
+  return (
+    // {
+    //   if(data & !!data) {
+    <div className="weather-data">
+      {props.data.temperature && (
+        <p>
+          <label>temperature: </label>
+          {props.data.temperature}
+        </p>
+      )}
 
-export default WeatherData
+      {props.data.city && (
+        <p>
+          <label>city: </label>
+          {props.data.city}
+        </p>
+      )}
+
+      {props.data.country && (
+        <p>
+          <label>country: </label>
+          {props.data.country}
+        </p>
+      )}
+      {props.data.humidity && (
+        <p>
+          <label>humidity: </label>
+          {props.data.humidity}
+        </p>
+      )}
+      {props.data.description && (
+        <p>
+          <label>description: </label>
+          {props.data.description}
+        </p>
+      )}
+      {props.data.error && (
+        <p>
+          <label>error: </label>
+          {props.data.error}
+        </p>
+      )}
+    </div>
+    // }
+    //   }
+  );
+};
+
+export default WeatherData;
