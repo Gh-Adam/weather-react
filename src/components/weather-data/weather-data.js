@@ -5,6 +5,7 @@ const WeatherData = props => {
     // {
     //   if(data & !!data) {
     <div className="weather-data">
+      {/* And Operator >> if condition true >> do what after && */}
       {props.data.temperature && (
         <p>
           <label>temperature: </label>
