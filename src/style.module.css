@@ -1,9 +1,33 @@
 .app {
   height: 80%;
-  background-image: url(/static/media/weather.8456b032.jpg);
+  background-image: url(./assets/images/weather.jpg);
   background-position: top center;
   background-color: #ffbb1026;
   background-repeat: no-repeat;
   background-size: 100% 60%;
   border-radius: 40px 0 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.weatherForm,
+.weatherData {
+  padding: 0 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.weatherForm input {
+  width: 40%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.submitBtn {
+  width: 50%;
+  background-color: orange;
 }
