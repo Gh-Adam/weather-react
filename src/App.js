@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "./App.css";
+// import "./App.css";
 import WeatherForm from "./components/weather-form/weather-form";
 import WeatherData from "./components/weather-data/weather-data";
-import Styles from "./style.module.css";
+import styles from "./style.module.css";
 
 const API_KEY = "910a0bbb81f6e09433dccea83982a487";
 class App extends Component {
@@ -51,7 +51,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className={styles.app}>
         <WeatherForm searchWeather={this.getWeather} />
         <WeatherData data={this.state} />
       </div>
