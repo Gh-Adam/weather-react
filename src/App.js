@@ -52,6 +52,7 @@ class App extends Component {
   render() {
     return (
       <div className={styles.app}>
+        <h1>Weather Search</h1>
         <WeatherForm searchWeather={this.getWeather} />
         <WeatherData data={this.state} />
       </div>

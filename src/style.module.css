@@ -1,27 +1,31 @@
 .app {
-  height: 80%;
-  background-image: url(./assets/images/weather.jpg);
-  background-position: top center;
-  background-color: #ffbb1026;
-  background-repeat: no-repeat;
-  background-size: 100% 60%;
+  width: 40%;
+  background-color: #5caace;
   border-radius: 40px 0 40px;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  flex-direction: column;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+}
+.weatherForm {
+  align-self: center;
 }
 
 .weatherForm,
 .weatherData {
-  padding: 0 5%;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .weatherForm input {
+  border-radius: 0.5rem 0;
+  border: 2px solid #fff;
   width: 40%;
   padding: 0.5rem;
   margin: 0.5rem;
@@ -29,5 +33,40 @@
 
 .submitBtn {
   width: 50%;
-  background-color: orange;
+  background-color: rgb(0, 0, 0);
+  color: #5caace;
+  padding: 0.7rem 1rem;
+  border: 2px solid #fff;
+  font-size: 1rem;
+  font-weight: 900;
+  border-radius: 0.5rem 0 0.5rem 0;
+  -webkit-border-radius: 0.5rem 0 0.5rem 0;
+  -moz-border-radius: 0.5rem 0 0.5rem 0;
+  -ms-border-radius: 0.5rem 0 0.5rem 0;
+  -o-border-radius: 0.5rem 0 0.5rem 0;
+  transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -ms-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
+  margin-top: 1.5rem;
+}
+
+.submitBtn:hover {
+  background-color: #fff;
+}
+
+.weatherData {
+  font-size: 1rem;
+  width: 90%;
+}
+.weatherData p {
+  width: 100%;
+  color: #000;
+}
+.weatherData label {
+  color: #f3f2f1;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-right: 1rem;
 }

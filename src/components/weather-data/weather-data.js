@@ -1,10 +1,11 @@
 import React from "react";
+import styles from "./../../style.module.css";
 
 const WeatherData = props => {
   return (
     // {
     //   if(data & !!data) {
-    <div className="weather-data">
+    <div className={styles.weatherData}>
       {/* And Operator >> if condition true >> do what after && */}
       {props.data.temperature && (
         <p>
